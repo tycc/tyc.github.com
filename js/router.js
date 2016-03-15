@@ -5,7 +5,6 @@ define([
   'views/home',
   'views/contact'
 ], function($, _, Backbone,home,contact) {
-
   var Router = Backbone.Router.extend({
     routes: {
         "":                 "home",
