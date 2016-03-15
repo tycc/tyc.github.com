@@ -1,16 +1,20 @@
-directory.HomeView = Backbone.View.extend({
+define([
+    'jquery',
+    'underscore',
+    'backbone',
+    'router',
+    'text!views/HomeView.html'
+], function($, _, Backbone, router,template) {
+    var homeView = Backbone.View.extend({
+        events: {
 
-    events:{
-        "click #showMeBtn":"showMeBtnClick"
-    },
-
-    render:function () {
-        this.$el.html(this.template());
-        return this;
-    },
-
-    showMeBtnClick:function () {
-        // onClick Show Me.
-    }
-
+        },
+        render: function() {
+            if($("#content").html()){
+                $("#content").empty();
+            }
+            $("#content").append(template);
+        }
+    });
+    return homeView;
 });
