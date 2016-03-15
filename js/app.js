@@ -4,7 +4,7 @@ define([
     'backbone',
     'router'
 ], function($, _, Backbone, router) {
-    var directory = {
+    var App = {
 
         views: {},
 
@@ -19,5 +19,5 @@ define([
             });
         }
     };
-    return directory;
+    return App;
 });
