@@ -3,7 +3,7 @@ define([
     'underscore',
     'backbone',
     'router',
-    'text!views/ContactView.html'
+    'text!views/contact.html'
 ], function($, _, Backbone, router,template) {
     var homeView = Backbone.View.extend({
         events: {
