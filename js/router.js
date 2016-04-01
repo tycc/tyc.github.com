@@ -24,14 +24,6 @@ define([
       page.render();
       $(page.el).attr('data-role','page');
       $('body').append($(page.el));
-      // var transition = $.mobile.defaultPageTransition;
-      // if (!this.firstPage) {
-      //   $.mobile.changePage($(page.el),{
-      //     changeHash:false,
-      //   })
-      // }else{
-      //   this.firstPage = false;
-      // }
     }
   });
 

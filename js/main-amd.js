@@ -5,7 +5,8 @@ require.config({
     'underscore':'vendor/underscore-1.6.0.min',
     'backbone':'vendor/backbone-1.1.2.min',
     'then': 'vendor/then-0.1.0.min',
-    'text': 'vendor/text'
+    'text': 'vendor/text',
+    'swiper':'vendor/swiper.min'
   }
 
 });
