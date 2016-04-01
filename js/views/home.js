@@ -4,7 +4,7 @@ define([
     'backbone',
     'router',
     'swiper',
-    'text!views/HomeView.html'
+    'text!views/home.html'
 ], function($, _, Backbone, router,Swiper,template) {
     var homeView = Backbone.View.extend({
         events: {
@@ -27,7 +27,7 @@ define([
                 spaceBetween: 30,
                 mousewheelControl: true,
                 paginationBulletRender: function (index, className) {
-                    var btn = "";
+                    var btn;
                     switch(index){
                         case 0: btn = "首页"; break;
                         case 1: btn = "222"; break;
