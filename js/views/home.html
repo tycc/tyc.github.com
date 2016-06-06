@@ -1,5 +1,10 @@
 <div id="home">
     <style>
+    *,p{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
     #home .swiper-container {
         width: 100%;
         height: 100%;
@@ -44,14 +49,106 @@
         background-size: 100% 100%;
         height: 100%;
         width:100%;
-        opacity: 0.7;
+        padding: 2% 10%;
     }
+    .homeContent{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        background-color: rgba(138,188,159,0.5);
+        box-shadow: 0px 0px 5px 5px rgba(255,255,255,.6);
+        border-radius: 3px;
+        overflow:hidden;
+    }
+    .contentTop{
+        width: 100%;
+        height: 120px;
+    }
+    .contentLeft,.contentRight,.infoContent{
+        width: 33.333%;
+        height: 100%;
+        float: left;
+    }
+    .headImg{
+        width: 240px;
+        float: left;
+        padding: 25px 30px 10px 30px;
+    }
+    .headImg img{
+        height: 80px;
+        width:80px;
+        border-radius: 80px;
+    }
+    .headInfo{
+        height:100%;
+        width: auto;
+        margin-left: 240px;
+    }
+    .headInfo>div{
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        display: inline-block;
+    }
+     .headInfo>div:nth-child(1){
+        text-align: left;
+        float: left;
+        line-height: 25px;
+     }
+     .headInfo>div:nth-child(2){
+        line-height: 50px;
+     }
+     .headInfo img{
+        width: 20px;
+        height: 20px;
+     }
     </style>
     <div id="homeContent">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div id="slide-home"></div>
+                    <div id="slide-home">
+                        <div class="homeContent">
+                            <div class="contentTop">
+                                <div class="headImg">
+                                    <img src="images/IMG_0681.jpg" alt="">
+                                </div>
+                                <div class="headInfo">
+                                    <div>
+                                        <p>
+                                            <img src="img/mailbox_icon.png">
+                                            <span>xiaosha5447@163.com</span>
+                                        </p>
+                                        <p>
+                                            <img src="img/webChat.png">
+                                            <span>xiaosha2008</span>
+                                        </p>
+                                        <p>
+                                            <img src="img/icon-weibo.png">
+                                            <span><a href="http://weibo.com/3063171801/profile?topnav=1&wvr=6&is_all=1">break</a></span>
+                                        </p>
+                                        <p>
+                                            <img src="img/home.png">
+                                            <span><a href="https://github.com/tycc/tycc.github.io">my home</a></span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p style="font-size:40px">谭逸超</p>
+                                        <p>HTML5开发工程师（移动端方向）</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentLeft">
+                                
+                            </div>
+                            <div class="infoContent">
+                                
+                            </div>
+                            <div class="contentRight">
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-slide">Slide 2</div>
                 <div class="swiper-slide">Slide 3</div>
